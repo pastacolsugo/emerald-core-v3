@@ -1,5 +1,7 @@
 Emerald Core v3
 
+= platformio?
+
 = Remote Coms
 	+ Server client
 		Arduino Server
