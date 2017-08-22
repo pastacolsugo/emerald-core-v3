@@ -1,0 +1,7 @@
+
+fase 1:
+	verifica impostazioni sistema
+	setup variabili globali
+	inizializzazione LCD e oggetti vari
+
+fase 2:

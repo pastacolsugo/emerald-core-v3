@@ -1,0 +1,24 @@
+Emerald Core v3
+
+= Remote Coms
+	+ Server client
+		Arduino Server
+
+		Raspberry Server
+
+	+ email
+
+
+	+ sms
+
+= PID control
+
+= Digital control
+
+= Don't name controllers
+Just use digital controller #1 #2 #3 etc. then associate a name to each controller
+Reuse the digital time-based finders, it's stupid to have 4 functions that do the same things (i.e. findWater findLight1 findLight2 findFan)
+
+= Support for watering zones and soil moisture sensor for watering
+
+= Embed support for data logging
