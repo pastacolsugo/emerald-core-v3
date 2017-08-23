@@ -24,3 +24,6 @@ Reuse the digital time-based finders, it's stupid to have 4 functions that do th
 = Support for watering zones and soil moisture sensor for watering
 
 = Embed support for data logging
+
+= LCD menu and encoder control
+
