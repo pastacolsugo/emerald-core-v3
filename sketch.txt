@@ -1,7 +1,33 @@
+Serial interface:
+	- output
+		print  // istant
+		record/log
+		set
+	- program
+		print
+		set
+		list
+		use
+		copy
+		new
+		save
+	- time
+		print
+		log
+		set
 
-fase 1:
-	verifica impostazioni sistema
-	setup variabili globali
-	inizializzazione LCD e oggetti vari
 
-fase 2:
+Output controller:
+	N-channels
+	channel names
+	digital (analog?)
+	assignable pins
+
+Hardware Human interface controller
+	reading encoder and buttons
+	(interrupt)
+
+Environment Sensor controller
+	n-Temperature
+	watering set (n-soil, water tank level)
+	
