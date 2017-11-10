@@ -1,7 +1,17 @@
+#ifndef DEFINE_H
+	#include "define.hpp"
+	#define DEFINE_H
+#endif
+
 #ifndef LIQUIDCRYSTALFAKE_H
-#include "LiquidCrystalFake.h"
-#include "SerialFake.hpp"
-#include "define.hpp"
+	#include "LiquidCrystalFake.hpp"
+	#define LIQUIDCRYSTALFAKE_H 
+#endif
+
+#ifndef SERIALFAKE_H
+	#include "SerialFake.hpp"
+	#define SERIALFAKE_H
+#endif
 
 liquid lcd;
 
@@ -9,36 +19,32 @@ void setup (){
 	// init procedure
 
 	// serial init
-	Serial.begin (115200);
-	Serial.print ("Emerald Core v3\nstarting up ...\n");
 
 	// lcd init
-	Serial.print ("lcd init ... ");
-	// lcd.begin(16, 2);
-	Serial.print ("DONE\n");
 
 	// sd card init
-	Serial.print ("sd card init ... ");
-	Serial.print ("DONE\n");
 
 	// startup logging
 
 	// program loading
-	Serial.print ("program loading ... ");
-	Serial.print ("DONE\n");
 
 	// sensor init
 	// general peripherals init
 }
 
 void loop (){
-	// read serial
-	char * buffer = (char *) malloc(serialCommandMaxLength * sizeof (char));
+	// read serial command
+	// create buffer to store serial command
+	char * buffer = (char *) malloc(serialCommandMaxLength+1 * sizeof (char));
 
-	if (buffer != NULL) {
-		buffer
+	// chech allocation of buffer
+	if (buffer == NULL) {
+		Serial.print("buffer allocation error.\n");
 	}
+
 	// parsing
+
+
 	// command apply
 
 	// read sensors
